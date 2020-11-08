@@ -17,7 +17,7 @@ mkdir /usr/share/nginx/html/healthz /usr/share/nginx/html/hostname /usr/share/ng
 cat > /usr/share/nginx/html/hostname/index.html <<EOF
 $HOSTNAME -- $VERSION
 EOF
-cat > /usr/share/nginx/html/version/index.html <<EOF
+cat >> /usr/share/nginx/html/version/index.html <<EOF
 $VERSION
 EOF
 chmod 777 /usr/share/nginx/html/healthz
